@@ -2,11 +2,11 @@ const Fighter = require("./src/Fighter.js");
 const Shield = require("./src/Shield.js");
 const Weapon = require("./src/Weapon.js");
 
-const sword = new Weapon(10);
-const frenchShield = new Shield(10);
+const weapon = new Weapon("Sword"); // déjà initialisé à 10
+const shield = new Shield("Aegis"); // déjà initialisé à 10
 
 /** Create Heracles  */
-const heracles = new Fighter("🧔 Heracles", 20, 6, sword, frenchShield);
+const heracles = new Fighter("🧔 Heracles", 20, 6, weapon, shield);
 
 /** Create the opponent  */
 const boar = new Fighter("🐗 Erymanthian Boar", 25, 12);
